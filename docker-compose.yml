@@ -1,5 +1,5 @@
 services:
-  vite:
+  vite_tailwindcss:
     image: node:24-alpine
     user: "node"
     working_dir: /home/node/app
