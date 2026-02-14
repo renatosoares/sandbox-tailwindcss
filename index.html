@@ -5,24 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Blog</title>
-  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-800 ">
 
   <!-- Header -------------------------------------------------------------- -->
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">Meu Blog</h1>
-      <nav class="space-x-4">
-        <a href="#" class="text-gray-600 hover:text-indigo-600">Quem sou</a>
-        <a href="#" class="text-gray-600 hover:text-indigo-600">Links</a>
-        <a href="#" class="text-gray-600 hover:text-indigo-600">Nossos produtos</a>
-        <a href="#" class="text-gray-600 hover:text-indigo-600">Imagens do RN</a>
-        <a href="#" class="text-gray-600 hover:text-indigo-600">Fale comigo</a>
-      </nav>
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="h-20 flex items-center justify-between">
+
+        <div class="flex-shrink-0">
+          <a href="#" class="text-3xl font-bold text-indigo-700 tracking-tight">
+            Meu Blog
+          </a>
+        </div>
+
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-600 hover:text-indigo-700 font-medium transition-colors">Quem sou</a>
+          <a href="#" class="text-gray-600 hover:text-indigo-700 font-medium transition-colors">Links</a>
+          <a href="#" class="text-gray-600 hover:text-indigo-700 font-medium transition-colors">Nossos produtos</a>
+          <a href="#" class="text-gray-600 hover:text-indigo-700 font-medium transition-colors">Imagens do RN</a>
+          <a href="#" class="text-gray-600 hover:text-indigo-700 font-medium transition-colors">Fale comigo</a>
+        </nav>
+
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-600 focus:outline-none p-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100">
+        <nav class="flex flex-col space-y-3 mt-4">
+          <a href="#" class="text-gray-600 hover:bg-gray-50 px-2 py-1 rounded">Quem sou</a>
+          <a href="#" class="text-gray-600 hover:bg-gray-50 px-2 py-1 rounded">Links</a>
+          <a href="#" class="text-gray-600 hover:bg-gray-50 px-2 py-1 rounded">Nossos produtos</a>
+          <a href="#" class="text-gray-600 hover:bg-gray-50 px-2 py-1 rounded">Imagens do RN</a>
+          <a href="#" class="text-gray-600 hover:bg-gray-50 px-2 py-1 rounded">Fale comigo</a>
+        </nav>
+      </div>
     </div>
   </header>
+
+  <script>
+  </script>
 
   <!-- Hero ---------------------------------------------------------------- -->
   <div class="max-w-6xl mx-auto bg-white shadow-lg overflow-hidden">
@@ -488,6 +516,7 @@
     </div>
   </footer>
 
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
