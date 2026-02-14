@@ -1,15 +1,72 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>app</title>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Meu Blog</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Home</a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Sobre</a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-indigo-600 text-white py-20">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Bem-vindo ao Meu Blog</h2>
+      <p class="text-lg">Compartilhando ideias, tutoriais e reflexões sobre tecnologia e design.</p>
+    </div>
+  </section>
+
+  <!-- Posts -->
+  <main class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+    <!-- Card -->
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+      <img src="https://source.unsplash.com/400x200/?coding" alt="Post" class="rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Primeiro Post</h3>
+      <p class="text-gray-600 mb-4">Uma introdução ao mundo do desenvolvimento web com dicas práticas.</p>
+      <a href="#" class="text-indigo-600 font-medium hover:underline">Leia mais →</a>
+    </article>
+
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+      <img src="https://source.unsplash.com/400x200/?design" alt="Post" class="rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Design Minimalista</h3>
+      <p class="text-gray-600 mb-4">Explorando como o minimalismo pode melhorar a experiência do usuário.</p>
+      <a href="#" class="text-indigo-600 font-medium hover:underline">Leia mais →</a>
+    </article>
+
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6">
+      <img src="https://source.unsplash.com/400x200/?blog" alt="Post" class="rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">Como Criar um Blog</h3>
+      <p class="text-gray-600 mb-4">Passo a passo para montar seu próprio blog usando HTML e Tailwind.</p>
+      <a href="#" class="text-indigo-600 font-medium hover:underline">Leia mais →</a>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6 mt-10">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <p>&copy; 2026 Meu Blog. Todos os direitos reservados.</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-white">Twitter</a>
+        <a href="#" class="hover:text-white">LinkedIn</a>
+        <a href="#" class="hover:text-white">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
