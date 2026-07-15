@@ -1,4 +1,15 @@
 import "./style.css";
+import { initCarousel, nextSlide, prevSlide } from "./carousel";
+
+document.addEventListener("DOMContentLoaded", () => {
+  initCarousel();
+
+  const nextBtn = document.querySelector<HTMLButtonElement>("#nextBtn");
+  const prevBtn = document.querySelector<HTMLButtonElement>("#prevBtn");
+
+  nextBtn?.addEventListener("click", nextSlide);
+  prevBtn?.addEventListener("click", prevSlide);
+});
 
 (() => {
   const header = document.getElementById("main-header");
